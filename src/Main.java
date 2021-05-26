@@ -1,9 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         CreditPaymentService service = new CreditPaymentService();
-        int creditAmount;
-        double rateMonth; // rateMonth это процент в год 9,99 впереведёный в месяц
-        int creditTerm;
+
         int monthlyPayment = (int)service.calculate(1_000_000, 0.008325, 12);
         System.out.println("Eжемесячный платеж при сроке кредита 1 год:" + monthlyPayment);
 
